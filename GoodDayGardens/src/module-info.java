@@ -7,4 +7,5 @@
  */
 module GoodDayGardens {
 	requires lwjgl;
+	requires jdk.unsupported;
 }

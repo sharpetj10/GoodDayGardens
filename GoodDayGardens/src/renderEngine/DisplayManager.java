@@ -15,7 +15,6 @@ public class DisplayManager {
 	private static final String TITLE = "Our First Display";
 
 	public static void createDisplay() {
-		
 		ContextAttribs attribs = new ContextAttribs(3, 2).withForwardCompatible(true).withProfileCore(true);
 		
 		try {
@@ -29,20 +28,15 @@ public class DisplayManager {
 		}
 		
 		GL11.glViewport(0, 0, WIDTH, HEIGHT);
-		
 	}
 
 	public static void updateDisplay() {
-		
 		Display.sync(FPS_CAP);
 		Display.update();
-		
 	}
 	
 	public static void closeDisplay() {
-		
 		Display.destroy();
-		
 	}
 
 }
